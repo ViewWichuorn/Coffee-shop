@@ -1,0 +1,76 @@
+print("---Welcome to coffee shop---")
+menu = int(input("Please type 1 to show menu: "))
+if menu == 1:
+  print("---Choose the menu---")
+  print("1. Espresso")
+  print("2. Cappucino")
+  print("3. Latte")
+  select_coffee = int(input("Select coffee: "))
+  if select_coffee == 1:
+    print("1. Hot 55 baht")
+    print("2. Cold 60 baht")
+    select_type = int(input("Select type: "))
+    if select_type == 1:
+      print("---You choose hot Espresso 55 baht---")
+      money = int(input("Input your money: "))
+      if money >= 55:
+        print("You recieved a change of %d baht" % (money - 55))
+        print("---Thank you---")
+      else:
+        print("Not enough money")
+        print("---Please try again---")
+    elif select_type == 2:
+      print("---You choose cold Espresso 60 baht---")
+      money = int(input("Input your money: "))
+      if money >= 60:
+        print("You recieved a change of %d baht" % (money - 60))
+        print("---Thank you---")
+      else:
+        print("Not enough money")
+        print("---Please try again---")
+  elif select_coffee == 2:
+    print("1. Hot 55 baht")
+    print("2. Cold 60 baht")
+    select_type = int(input("Select type: "))
+    if select_type == 1:
+      print("---You choose hot Cappucino 55 baht---")
+      money = int(input("Input your money: "))
+      if money >= 55:
+        print("You recieved a change of %d baht" % (money - 55))
+        print("---Thank you---")
+      else:
+        print("Not enough money")
+        print("---Please try again---")
+    elif select_type == 2:
+      print("---You choose cold Cappucino 60 baht---")
+      money = int(input("Input your money: "))
+      if money >= 60:
+        print("You recieved a change of %d baht" % (money - 60))
+        print("---Thank you---")
+      else:
+        print("Not enough money")
+        print("---Please try again---")
+  elif select_coffee == 3:
+    print("1. Hot 55 baht")
+    print("2. Cold 60 baht")
+    select_type = int(input("Select type: "))
+    if select_type == 1:
+      print("---You choose hot Latte 55 baht---")
+      money = int(input("Input your money: "))
+      if money >= 55:
+        print("You recieved a change of %d baht" % (money - 55))
+        print("---Thank you---")
+      else:
+        print("Not enough money")
+        print("---Please try again---")
+    elif select_type == 2:
+      print("---You choose cold Latte 60 baht---")
+      money = int(input("Input your money: "))
+      if money >= 60:
+        print("You recieved a change of %d baht" % (money - 60))
+        print("---Thank you---")
+      else:
+        print("Not enough money")
+        print("---Please try again---")
+else:
+  print("Sorry something went wrong")
